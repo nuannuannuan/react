@@ -1,0 +1,23 @@
+.numBox{
+    width:0.42rem;
+    height:0.42rem;
+    border: solid 0.01rem #e7cdaf;
+    color: #ecc5a9;
+    font-size: 0.25rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.42rem;
+    margin:0.05rem;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.active{
+    transition: 0.5s;
+    margin-top: -0.42rem;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin:0 auto;
+}

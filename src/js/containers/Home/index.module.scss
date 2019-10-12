@@ -1,0 +1,26 @@
+.content {
+  color:#fff;
+  font-size: 0.28rem;
+}
+.content ::first-line{
+  // color:red;
+}
+p[data-url]{
+  color:blue !important;
+}
+
+//flex 详解
+//flex-direction: row 默认值/row-reverse /column => 垂直方向/column-reverse
+//flex-wrap: nowrap/ wrap/wrap-reverse
+//justify-content: flex-start/flex-end/center/space-between如果有两个以上的项目，则容器主轴的开始和结束位置各一个，其他的项目均匀排列，项目之间的间隔相等/space-around/每个项目两侧间距相等
+//align-items  :/fles-start/flex-end/center/baseline/stretch将占满整个容器的高度/
+//order:1/2/3
+// flex-grow: 1/2/3 如果所有的item 的flex-grow的值都是一样的话那就是以item 的width为最小值平均分配主轴上的宽度。如果item没有设置width则所有的item平分主轴上的剩余宽度（多余空间）。 
+//如果item的flex-grow的值不一样，那就是根据对应的比例来分配主轴上的剩余宽度（多余空间）。同样是以item设置的width为最小值。 
+//如果item设置的max-width则放大的宽度不会超过该值 
+//flex-shrink //所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。 
+//如果container容器设置的flex-wrap则不存在空间不足的情况，如果超过会自动换行。所以这时候设置flex-shrink也是不起作用的。 
+//负值对该属性无效
+
+//align-self:fles-start/flex-end/center/baseline/stretch;auto
+//align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性
